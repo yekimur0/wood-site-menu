@@ -87,6 +87,17 @@ const MENU_SWIPEER = new Swiper('.menu__swiper', {
 })
 
 
+const togglerLinkCustom = document.querySelector('.whatsapp');
+const otherSocialWhatsapp = document.querySelector('.other-social__whatsapp')
+const otherSocialTel = document.querySelector('.other-social__tel')
+
+togglerLinkCustom.addEventListener('click', (e) => {
+    otherSocialWhatsapp.classList.toggle('other-social__whatsapp-active')
+    otherSocialTel.classList.toggle('other-social__tel-active')
+}
+)
+
+
 
 
 Fancybox.bind("[data-fancybox]", {});
