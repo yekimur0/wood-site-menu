@@ -9,7 +9,7 @@
 
   --black: #0A0A0A;
   --white: #E2E2E2;
-  --accent: #4A270B;
+  --accent: #D8AD98;
   --accent-white: #7C4213;
 }
 
@@ -50,7 +50,7 @@ img {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  color: var(--white);
+  color: var(--black);
   border: none;
   border-radius: 12px;
   background-color: var(--accent);
@@ -234,7 +234,8 @@ img {
 
 .menu__btn.active {
   background-color: var(--accent);
-  border-color: var(--accent)
+  border-color: var(--accent);
+  color: var(--black);
 }
 
 .menu__slide-content {
@@ -400,12 +401,19 @@ img {
   .menu__slider-nav {
     z-index: 3;
   }
+  .hero__contacts {
+    position: static;
+    max-width: 100%;
+    margin-top: 20px;
+    transform: translate(0);
+  }
 }
 
 
 @media(any-hover: hover) {
   .btn:hover {
     background-color: var(--accent-white);
+    color: var(--white);
     border-radius: 8px;
   }
 
